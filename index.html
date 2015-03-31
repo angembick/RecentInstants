@@ -16,7 +16,7 @@
 	      url: "https://api.instagram.com/v1/users/48121533/media/recent/?access_token=48121533.5db54f4.df09ebad5d3d47d3979743c9c3b57b37",
 	      success: function(data) {
 	        for (var i = 0; i < 7; i++) {
-	        $(".latest").append("<li><a target='_blank' href='" + data.data[i].link +"'><img   src='" + data.data[i].images.high_resolution.url +"'></img></a></li>");
+	        $(".latest").append("<li><a target='_blank' href='" + data.data[i].link +"'><img   src='" + data.data[i].images.standard_resolution.url +"'></img></a></li>");
 	        }
 	      }
 	    });
