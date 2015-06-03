@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-	<div>
-		<h1></h1>
-		<ul class="latest">
-		</ul>    
-	</div>
-	<div  class="detailsPaneOuter">
-	</div>
-	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-	<script  type="text/javascript" src="https://apis.google.com/js/client.js?onload=init"></script>
-	<script>
-	    $.ajax({
+$.ajax({
 	      type: "GET",
 	      dataType: "jsonp",
 	      cache: false,
@@ -42,6 +27,3 @@
 		    	}
 	    	}
 	    }, 250);
-	</script>
-</body>
-</html>
